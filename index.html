@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <script src = "script.js" defer></script>
+</head>
+<style>
+    table, th, td{
+        border: 1px  solid black;
+    }
+</style>
+<body>
+    <h1>Recent Movies I've Watched</h1>
+    <form>
+        <label for = "title">Title of Movie:</label>
+        <input type="text" id = "title" name = "title">
+        <br>
+        <label for = "genre">Movie Genre:</label>
+        <input type="text" id = "genre" name = "genre">
+        <br>
+        <label for = "rating">Star Rating:</label>
+        <select id="rating" name="rating">
+            <option value="One Star">*</option>
+            <option value="Two Stars">**</option>
+            <option value="Three Stars">***</option>
+            <option value="Four Stars">****</option>
+            <option value="Five Stars">*****</option>
+          </select>
+          <br>
+        <input type="button" id = "btnSubmit" value = "Add to List">
+        
+    </form>
+    <h2>Movies</h2>
+    <table>
+        <thead>
+            <tr>
+            <th>Movie Name</th>
+            <th>Movie Genre</th>
+            <th>Star Rating</th>
+            </tr>
+
+        </thead>
+        <tbody id = "test">
+
+        </tbody>
+    </table>
+
+    <div id = "tablediv">
+    
+    </div>
+ 
+</body>
+</html>
